@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carl De Los Santos — Student Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">CD<span>.</span></div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <span id="themeIcon">🌙</span>
+        <span id="themeLabel">Dark</span>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="hero-tag">✦ Student Portfolio</span>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="highlight">Carl Anthony F. De Los Santos</span>
+      </h1>
+
+      <p class="hero-sub">
+        Information Technology Student &amp; Aspiring Developer — crafting clean,
+        purposeful digital experiences one line at a time.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#about" class="btn btn-primary">Learn About Me</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Projects</span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat">
+          <span class="stat-num">3rd</span>
+          <span class="stat-label">Year</span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar">
+          <img src="./me.jpg" alt="Carl De Los Santos" class="avatar-img" onerror="this.style.display='none'; this.parentElement.setAttribute('data-fallback','CD')"/>
+        </div>
+      </div>
+
+      <div class="floating-badge badge-1">HTML &amp; CSS</div>
+      <div class="floating-badge badge-2">Python</div>
+      <div class="floating-badge badge-3">JavaScript</div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+
+      <div class="section-label">About Me</div>
+
+      <h2 class="section-title">
+        A little about <span class="highlight">myself</span>
+      </h2>
+
+      <div class="about-single">
+
+        <div class="about-text">
+
+          <p>
+            I'm a 3rd-year BSIT student at the University of Cebu Main-Campus,
+            passionate about building web applications and exploring the intersection
+            of design and code.
+          </p>
+
+          <p>
+            When I'm not studying or coding, I enjoy playing any kind of sports,
+            watching fliptop battle, and contributing to open-source projects.
+            I'm always eager to learn something new and take on challenging problems.
+          </p>
+
+          <div class="about-details">
+
+            <div class="detail-item">
+              <span class="detail-icon">🎓</span>
+              <div>
+                <strong>Degree</strong>
+                <span>B.S. Information Technology</span>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <span>Cebu City, Philippines</span>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <span>delossantos@student.edu</span>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-icon">💼</span>
+              <div>
+                <strong>Status</strong>
+                <span>Open to Internships</span>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#" class="btn btn-primary" id="downloadCV">
+            ⬇ Download CV
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+
+      <div class="section-label">What I Know</div>
+
+      <h2 class="section-title">
+        My <span class="highlight">Skills</span>
+      </h2>
+
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="technical">Technical Skills</button>
+        <button class="tab-btn" data-tab="soft">Soft Skills</button>
+        <button class="tab-btn" data-tab="tools">Tools &amp; Platforms</button>
+      </div>
+
+      <div class="tab-content active" id="tab-technical">
+
+        <div class="skills-grid">
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>HTML &amp; CSS</span>
+              <span>90%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w:90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>JavaScript</span>
+              <span>75%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w:75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Python</span>
+              <span>80%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w:80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>React</span>
+              <span>60%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w:60%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>SQL / Databases</span>
+              <span>70%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w:70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Java</span>
+              <span>65%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w:65%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-soft">
+        <div class="soft-skills">
+          <div class="soft-card">💬 Communication</div>
+          <div class="soft-card">🧩 Problem Solving</div>
+          <div class="soft-card">⏱️ Time Management</div>
+          <div class="soft-card">🤝 Teamwork</div>
+          <div class="soft-card">🎯 Attention to Detail</div>
+          <div class="soft-card">🔄 Adaptability</div>
+          <div class="soft-card">💡 Critical Thinking</div>
+          <div class="soft-card">📋 Project Planning</div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-tools">
+        <div class="tools-grid">
+
+          <div class="tool-item">
+            <div class="tool-icon">⚡</div>
+            <span>VS Code</span>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">🐙</div>
+            <span>GitHub</span>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">🎨</div>
+            <span>Figma</span>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">🐳</div>
+            <span>Docker</span>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">☁️</div>
+            <span>Netlify</span>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">🔧</div>
+            <span>Postman</span>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">📦</div>
+            <span>npm</span>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">🗃️</div>
+            <span>MySQL</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+
+      <div class="section-label">My Work</div>
+
+      <h2 class="section-title">
+        Featured <span class="highlight">Projects</span>
+      </h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-image">💻</div>
+
+          <div class="project-content">
+            <h3>Student Management System</h3>
+
+            <p>
+              A web-based student management platform with login authentication,
+              grade tracking, and admin dashboard features.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">Live Demo</a>
+              <a href="#" class="btn btn-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">📱</div>
+
+          <div class="project-content">
+            <h3>Mobile Expense Tracker</h3>
+
+            <p>
+              A budgeting and expense tracking application that helps users monitor
+              their spending habits efficiently.
+            </p>
+
+            <div class="project-tech">
+              <span>React</span>
+              <span>Firebase</span>
+              <span>CSS</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">Live Demo</a>
+              <a href="#" class="btn btn-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">🌐</div>
+
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+
+            <p>
+              A responsive and modern personal portfolio website showcasing
+              skills, achievements, and projects.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">Live Demo</a>
+              <a href="#" class="btn btn-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">📚</div>
+
+          <div class="project-content">
+            <h3>Library Book Finder</h3>
+
+            <p>
+              A web app that lets students search, filter, and borrow library books,
+              backed by a Python Flask API and MySQL database for real-time inventory tracking.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>MySQL</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">Live Demo</a>
+              <a href="#" class="btn btn-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="section" id="contact">
+    <div class="container">
+
+      <div class="section-label">Say Hello</div>
+
+      <h2 class="section-title">
+        Get In <span class="highlight">Touch</span>
+      </h2>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <p>
+            I'm currently looking for internship opportunities and collaborations.
+            Whether you have a question or just want to say hi — my inbox is always open!
+          </p>
+
+          <div class="contact-links">
+
+            <a href="mailto:carl@student.edu" class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <span>carl@student.edu</span>
+              </div>
+            </a>
+
+            <a href="#" class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/carldelossantos</span>
+              </div>
+            </a>
+
+            <a href="#" class="contact-item">
+              <div class="contact-icon">🐙</div>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/carldelossantos</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+
+          <div class="form-group">
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" placeholder="Carl De Los Santos" required/>
+          </div>
+
+          <div class="form-group">
+            <label for="femail">Email Address</label>
+            <input type="email" id="femail" placeholder="carl@example.com" required/>
+          </div>
+
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" placeholder="Internship Opportunity"/>
+          </div>
+
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" rows="4" placeholder="Hi Carl, I'd love to connect..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message 🚀
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-logo">
+        CD<span>.</span>
+      </div>
+
+      <p>
+        Designed &amp; built by Carl Anthony F. De Los Santos &copy; 2026
+      </p>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+  <script type="module">
+  import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+  Chatbot.init({
+    chatflowid: "71dd6a38-f6ae-4fa2-897b-bdea2f5e3c91",
+    apiHost: "https://cloud.flowiseai.com",
+    theme: {
+      chatWindow: {
+        title: "CHATBOT AI ASSISTANT",
+        showTitle: true,
+        titleAlign: "center",
+        botMessage: {
+          showAvatar: false,
+        },
+        userMessage: {
+          showAvatar: false,
+        }
+      }
+    }
+  })
+</script>
+
+</body>
+</html>
